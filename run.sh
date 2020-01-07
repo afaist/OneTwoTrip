@@ -1,5 +1,10 @@
 export TRAINING_DATA=input/train_folds.csv
-export FOLD=1
+export TEST_DATA=input/onetwotrip_challenge_test.csv
 export MODEL=$1
 
-python3 -m src.train
+#FOLD=0 python3 -m src.train
+#FOLD=1 python3 -m src.train
+#FOLD=2 python3 -m src.train
+#FOLD=3 python3 -m src.train
+#FOLD=4 python3 -m src.train
+python3 -m src.predict
